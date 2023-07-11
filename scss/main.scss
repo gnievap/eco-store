@@ -1,11 +1,11 @@
-$primary-color: #FFEFE7;
-$secondary-color: #FFDAC6;
-$tertiary-color: #BABD8D;
+$primary-color: rgba(255, 239, 231, 1); //ejemplo de expresiones de color
+$secondary-color: #FFDAC6; // las expresiones de color se pueden usar con funciones
+$tertiary-color: #BABD8D; // o valores hexadecimales
 $primary-text-color: #7C6A0A;
-$font-stack: 'IBM Plex Sans', sans-serif;
+$font-stack: 'IBM Plex Sans', sans-serif; //expresión String
 
 body{
-    margin: 0px;
+    margin: 0px; // expresión con números y medidas
     padding: 0px;
 }
 
