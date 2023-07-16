@@ -73,6 +73,9 @@ article {
         border-radius: 35px;
         color: white;
         font-size: 1em;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
     img {
             width: 25vw;
@@ -173,6 +176,27 @@ section{
         @extend .earth;
     }
 
+}
+
+.gallery { 
+    h2 {
+        font-weight: bold;
+        padding-bottom: 60px;   
+    }
+    .gallery-images {
+        @include flexCenter(row,space-between, center);
+        img{
+            width: 28vw;
+            height: 45vh;
+            object-fit: cover;
+            object-position: 5px 35%;
+            border-radius: 16px;
+            &:hover {
+                transform: scale(1.1);
+                transition-duration: 0.3s;
+            }
+        }
+    }
 }
 
 footer {
