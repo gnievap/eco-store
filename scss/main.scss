@@ -157,11 +157,12 @@ section{
     }
     .mission-section {
         @include flexCenter(row, space-evenly, center);
+        $text-color:  #E86424;
         .earth {
             width: 30vw;
             display: flex;
             gap: 40px;
-            color: #E86424;
+            color: $text-color;
             img {
                 object-fit: contain;
             }
@@ -199,9 +200,31 @@ section{
     }
 }
 
+.location {
+    $text-color:  #E86424;
+    color: $text-color;
+    h2 {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    .map {
+        @include flexCenter(row, center, center);
+        padding-bottom: 50px;
+    }
+    h3, p {
+        font-size: $paragraph-size;
+    }
+}
+
 footer {
-    $background: $quaternary-color;
-    background-color: $background;
+    background-color: $quaternary-color;
     width: 105;
-    height: 250px;
+    height: auto;
+    padding: 40px;
+    color: white;
+    .social-media {
+        @include flexCenter(row, center, center);
+        gap: 40px;
+        padding-bottom: 40px;
+    }
 }
